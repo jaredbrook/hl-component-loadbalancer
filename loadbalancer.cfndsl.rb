@@ -146,7 +146,7 @@ CloudFormation do
       end
 
       if rule.key?("redirect")
-        actions << { Type: "redirect", RedirectConfig: {rule['redirect']} }
+        actions << { Type: "redirect", RedirectConfig: rule['redirect'] }
       end
 
       ElasticLoadBalancingV2_ListenerRule("#{listener_name}Rule#{rule['priority']}") do
