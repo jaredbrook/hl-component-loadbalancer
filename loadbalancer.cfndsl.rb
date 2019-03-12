@@ -150,7 +150,7 @@ CloudFormation do
       end
 
       ElasticLoadBalancingV2_ListenerRule("#{listener_name}Rule#{rule['priority']}") do
-        Actions [actions]
+        Actions actions
         Conditions listener_conditions
         ListenerArn Ref("#{listener_name}Listener")
         Priority rule['priority'].to_i
