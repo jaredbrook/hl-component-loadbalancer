@@ -47,7 +47,7 @@ listeners:
     #     priority: 400
     #     redirect:
     #       Host: '#{host}'
-    #       Path: '#{path}'
+    #       Path: '/#{path}'
     #       Port: '443'
     #       Protocol: 'HTTPS'
     #       Query: '#{query}'
