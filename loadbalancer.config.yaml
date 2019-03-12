@@ -48,7 +48,7 @@ listeners:
     #     redirect:
     #       Host: '#{host}'
     #       Path: '#{path}'
-    #       # Port: String
+    #       Port: '443'
     #       Protocol: 'HTTPS'
     #       Query: '#{query}'
     #       StatusCode: 'HTTP_301'
